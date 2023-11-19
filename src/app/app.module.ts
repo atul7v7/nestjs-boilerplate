@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
-import { setupConfig } from 'src/config/setup.config';
+import { setupConfig } from '@src/config/env/setup.config';
 import { UtilModule } from 'src/modules/env/util.module';
 
 @Module({

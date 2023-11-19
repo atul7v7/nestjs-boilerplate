@@ -6,7 +6,7 @@ import { AppConfig } from './app.config';
 
 function loadConfigFile(): EnvConfig {
   const ENVIRONMENT: string = process.env.ENVIRONMENT || 'development';
-  const envFilePath = join('src', 'config', `.env.${ENVIRONMENT}.json`);
+  const envFilePath = join('src', 'config', 'env', `.env.${ENVIRONMENT}.json`);
   return JSON.parse(readFileSync(envFilePath, 'utf-8'));
 }
 
