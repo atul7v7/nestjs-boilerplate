@@ -12,6 +12,6 @@ async function bootstrap() {
   // swaggerSteup
   swaggerSetup(app);
 
-  await app.listen(port);
+  await app.listen(3000);
 }
 bootstrap();
